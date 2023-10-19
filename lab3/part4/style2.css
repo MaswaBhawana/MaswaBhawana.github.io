@@ -21,6 +21,11 @@ body {
     margin: 0 auto;
     padding: 0 20px;
     max-width: 980px;
+
+    /* Get two column layout.*/
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
   }
   
   nav {
@@ -30,6 +35,9 @@ body {
     /* Navigation bar should scroll with the content and then become stuck at the top*/
     top: 0;
     position: sticky;
+
+    /* Ensures it's above other content */
+    z-index: 100;
 
   }
   
@@ -58,4 +66,8 @@ body {
 
   .feature {
       width: 200px;
+
+      /* Image will be wrapped around the text. */
+      float: left;
+      margin: 0 20px 20px 0;
   }
