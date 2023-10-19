@@ -11,5 +11,28 @@ html {
    justify-content: center;
    align-items: center;
 
-   
+   /* Set the font size using rems*/
+   font-size: 1.125rem; /* 18px / 16px = 1.125rem */
+
+   /*Set the background colour*/
+   background: red;
+
+   /* Set the text color and text shadow */
+   color: #fff;
+   text-shadow: 1px 1px 0 black;
+
+   /* Apply a subtle border radius */
+   border-radius: 10px;
+
+   /* border with a dark color than background color */
+   border: 1px solid darkred;
+
+   /* Apply a linear gradient */
+   background: linear-gradient(45deg, transparent, #000 30%, #0002);
+
+   /* Apply box shadows for a raised 3D look */
+   box-shadow: 3px 3px 5px rgba(246, 13, 13, 0.2),
+   inset 3px 3px 5px rgba(249, 41, 41, 0.2),
+   inset -3px -3px 5px rgba(220, 24, 24, 0.2);
+
  }
