@@ -6,7 +6,7 @@ html {
   .box {
    width: 200px;
    height: 200px;
-   margin: 0;
+   margin: 80px auto;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -15,24 +15,29 @@ html {
    font-size: 1.125rem; /* 18px / 16px = 1.125rem */
 
    /*Set the background colour*/
-   background: red;
+   background: rgba(249, 1, 0, 1);
 
    /* Set the text color and text shadow */
-   color: #fff;
+   color: rgb(255, 255, 255, 0.9);
    text-shadow: 1px 1px 0 black;
 
    /* Apply a subtle border radius */
    border-radius: 10px;
 
    /* border with a dark color than background color */
-   border: 1px solid darkred;
+   border: 1px solid rgb(136, 1, 0, 1);
 
    /* Apply a linear gradient */
-   background: linear-gradient(45deg, transparent, #000 30%, #0002);
+   background-image: linear-gradient(to bottom right, transparent, 30%, rgba(0, 0, 0, 0.2));
 
    /* Apply box shadows for a raised 3D look */
-   box-shadow: 3px 3px 5px rgba(246, 13, 13, 0.2),
-   inset 3px 3px 5px rgba(249, 41, 41, 0.2),
-   inset -3px -3px 5px rgba(220, 24, 24, 0.2);
+   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7), 
+   inset 5px 5px 5px rgba(255, 255, 255, 0.2), 
+   inset -5px -5px 5px rgba(0, 0, 0, 0.3);
 
+   /* Dividing the 20px by the font size (html) to get the rems value */
+  
+   font-size: 1.25rem;
+   text-align: center;
+   text-shadow: 1px 1px 1px black;
  }
