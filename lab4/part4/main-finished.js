@@ -1,4 +1,6 @@
 // set up canvas
+const para = document.querySelector('p');
+let count = 0;
 
 const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
@@ -168,7 +170,7 @@ while (balls.length < 25) {
 
   balls.push(ball);
   count++;
-  const para = 'Ball count: ' + count;
+  para.textContent = 'Ball count: ' + count;
 }
 
 const evilBall = new EvilCircle(random(0, width), random(0, height));
