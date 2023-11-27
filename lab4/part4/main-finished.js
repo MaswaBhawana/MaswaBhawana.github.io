@@ -167,7 +167,11 @@ while (balls.length < 25) {
    );
 
   balls.push(ball);
+  count++;
+  const para = 'Ball count: ' + count;
 }
+
+const evilBall = new EvilCircle(random(0, width), random(0, height));
 
 function loop() {
    ctx.fillStyle = 'rgba(0, 0, 0, 0.25)';
