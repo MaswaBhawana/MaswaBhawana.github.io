@@ -15,17 +15,20 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300%7CSonsie+One" rel="stylesheet"
+    type="text/css">
+  <link rel="stylesheet" href="style.css">
+</head>
   </head>
 
   <body>
-    <div class="header">
-      <font size="7">Welcome to our wildlife website</font>
-    </div>
+    <!-- Header section-->
+    <header>
+      <h1>Welcome to our wildlife website</h1>
+    </header>
 
-    <div class="nav">
+      <!--Navigation with Unordered list-->
+    <nav>
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Our team</a></li>
@@ -34,10 +37,10 @@
       </ul>
 
       <form class="search">
-        <input type="search" name="q" placeholder="Search query">
+        <input type="search" name="q" placeholder="Search query" aria-label="Search through site content">
         <input type="submit" value="Go!">
       </form>
-    </div>
+    </nav>
 
     <main>
       <article>
